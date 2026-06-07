@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catflix</title>
+    <style>
+        @font-face {
+            font-family: 'Netflix Sans';
+            src: url('https://db.onlinewebfonts.com/t/20e365021200155b410b25e791696014.woff2') format('woff2');
+        }
+        body { margin: 0; background: #000; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .logo { width: 250px; animation: intro 2.5s ease-in-out forwards; }
+        @keyframes intro {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="https://i.ibb.co/JwPkJ5YF/Icon.png" alt="Catflix">
+    <script>
+        setTimeout(() => { window.location.href = "Series.html"; }, 2500);
+    </script>
+</body>
+</html>
